@@ -1,0 +1,19 @@
+name: EnglishcraftAuth
+version: 1.0
+main: org.kvlt.englishcraft.EnglishcraftAuth
+load: STARTUP
+author: remillary@gmail.com
+prefix: EnglishcraftAuth
+
+commands:
+  setpassword:
+    default: op
+    permission: englishcraft.admin
+    description: Changes password
+    usage: /setpassword <old password> <new password>
+    aliases: [sp, setpwd, pwd, passwd]
+
+persmissions:
+  englishcraft.admin:
+    default: op
+    description: Permission for all admin commands
