@@ -23,12 +23,9 @@ public class PlayerAuthEventListener implements Listener {
 
         plugin.getUnauthedPlayers().add(player);
         if (session != null) {
-            plugin.$("session not null");
             String ip = player.getAddress().getHostName();
             if (ip.equals(session.getIp())) {
-                plugin.$("correct ip");
                 if (session.getExpirationTime() > System.currentTimeMillis()) {
-                    plugin.$("session success");
                     authorize(player);
                     return;
                 } else {
@@ -45,7 +42,6 @@ public class PlayerAuthEventListener implements Listener {
         plugin.getUnauthedPlayers().remove(player);
         plugin.getSessions().put(player.getName(), session);
         plugin.sendConfigMessage(player, "successful-login");
-        plugin.$("authed!");
     }
 
     @EventHandler
