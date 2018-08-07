@@ -1,0 +1,12 @@
+#DO NOT EDIT VERSION!!
+version: 1
+
+#For manually changing password edit them here and then use command "/setpassword reload" to apply passwords
+password: '12345qwe'
+admin-password: 'admin(pwd$is#lie3358'
+
+#Here you can change messages of the plugin
+messages:
+  wrong-password: Wrong password! Make sure that you have payed for this month.
+  successful-login: You successfully logged in!
+  login-require: Please type the password directly in the chat!

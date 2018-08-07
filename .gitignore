@@ -1,6 +1,8 @@
 .idea/
-artifacts/
+target/
 
 *.jar
 *.iml
 *.class
+
+build.properties
